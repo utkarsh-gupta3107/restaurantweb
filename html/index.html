@@ -1,0 +1,258 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Hotel Sunrise</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<style type="text/css">
+  html{
+       scroll-behavior: smooth;
+    }
+  .overall{background-color: tan;
+    font-style:italic;
+    }
+  .topbar{
+      background-color:#DF7401 ;
+      position:fixed;
+      top: 0;
+      left:0;
+      height:36px;
+      font-style:italic;
+      width:100%;
+      font-size: 25px;
+      text-align: right;
+      border-right: 20px solid #FAFAFA;
+      z-index:3;
+    }
+   .splsec{
+      padding-left:20px ;
+      padding-right:25px;
+      border-left: solid;
+      color:rgb(11, 22, 22); text-decoration: none";
+    }
+     a:hover{font-weight: bold;
+    }
+     .image{
+        float:left;
+    }
+     .checkout{
+        font-size: 25px;
+        border: 2px slategrey solid;
+    }
+    
+      #title{
+       font-size: 70px;
+       color:#f0d910 ;
+       position:absolute;
+       top:159px;
+       left:40px;
+       z-index: 2;
+       font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+   
+   .tagline{
+       left:650px;
+       position:absolute;
+       top:36px;
+       z-index: 2;
+       background-color:rgb(212, 160, 92);
+       width:610px;
+       height: 338px;
+    }
+    #flexboz{
+       display: flex;
+    }
+    .faded{
+       background-image: linear-gradient( to right,rgb(148, 93, 20),tan);
+    }
+    .address{
+        float:right;
+    }
+    h3{font-size: 20px;}
+
+    h2{font-size: 40px;}
+ 
+    .splsecimg{ width:333px; height:266px;
+     }
+ 
+    .card{
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space:nowrap;}
+
+    .scroll{
+        display: inline-block;
+        border:3px solid lightslategray;}
+
+    .searchbar{
+       width:208px;
+       float:right;
+       height:25px;
+       margin: 0;
+       border: 1.7px solid rgb(25, 90, 155);
+       border-radius: 7px;
+    }
+    .searchbar:hover{ 
+        background-color: rgb(149, 202, 176);
+    }
+    .srcbutton{
+       position: absolute;
+       right:225px;
+    }
+    .review{
+       background-color: wheat;
+       flex: 0 0 auto;
+       border: 3px slategrey solid;
+    }
+    .point{
+       display:flex;
+       flex-wrap: nowrap;
+       overflow-x: auto;
+    }
+   .revimg{
+       float: right;
+    }
+    .footer{
+        background-color: #424242;
+        color:seashell;
+    }
+ 
+    #backtotop{
+       float: right;
+       color: lightblue;
+       padding-bottom: 10px;
+       padding-right:10px ;
+    }
+    .takerev{
+       font-size: 20px;
+       font-style:"Times New Roman";
+    }
+    </style>    
+</head>
+<body>
+<div class="overall">
+    
+    <div class="topbar  ">
+        <img class="image" src="images/sunrise.jpg" width="40px" height="35px"/>
+        <a class="splsec" href="#Speciailitysection"  style="text-decoration: none;" >Specialities </a>
+        <a  class="splsec" href="#Recommendations"   style="text-decoration: none;" > Recommendations</a>
+        <a  class="splsec" href="#Reviews"  style="text-decoration: none;" >Reviews</a>
+    </div> 
+<div id="flexbox">
+    <div class="pos1">  
+      <img id="image" src="images/sunrise.jpg" width="650px" height="366px"/>
+   
+      <h2 id="title">HOTEL SUNRISE</h2>
+    </div>
+    <div class="tagline">
+      <strong>HOTEL SUNRISE</strong>
+      <hr />
+      <h2><strong>Rain or shine,<br /> it's time to dine. </strong></h2>
+      <p class="address"><h3>Address:</h3>
+      <h4>Block No.:7 <br />Patia,Bhubaneswar <br />Odisha</h4>
+      </p>
+       <a  class="checkout" href="#Speciailitysection"  style="color: lightblue; text-decoration: none";>Check Out Our Specialities!</a>   
+    </div>
+ </div>
+ <div class="faded" id="Speciailitysection" >
+      <hr />
+      <h2 >Welcome to Our Specialities!</h2>
+      <h3>Sizzling and Amazing! </h3>
+      <hr />
+ </div>
+      <p>Prices given here are,per plate.</p>
+      <div class="card" >
+           <div class="scroll">
+               <img class="splsecimg" src="images/biryani.jpg" />
+               <h4>Try Eid special Biryani with flat 10% off! </h4>
+           </div>
+           <div class="scroll">
+               <img class="splsecimg" src="images/hakka-noodles-recipe.jpg" />
+               <h4>Best Hakka Noodles from the Best Chefs?</h4>
+           </div>
+           <div class="scroll">
+                <img class="splsecimg" src="images/paneer-butter-masala.jpg" />
+                <h4>MOUTH-WATERING-Paneer-butter-masala</h4>
+            </div>
+            <div class="scroll">
+                <img  class="splsecimg"src="images/prawntikkamasala.jpg" />
+                <h4>Prawn Butter Masala at flabergasting Price!</h4>
+            </div>
+       </div>
+   <div class="faded" id="Recommendations">
+       <hr />
+       <h2 >Our Recommendations</h2>
+       <hr />
+   </div>
+   <div >
+        <img class="srcbutton" src="images/search.png" width="30px height="30px" />
+        <form >
+            <input class="searchbar" type="text" placeholder="Search" />
+        </form>
+    </div>
+    <br /><br />
+    <div class="card">
+        <div class="scroll">
+            <img  class="splsecimg"src="images/medu vada.jpg" />
+            <h4>Medu Vada:The most wanted!</h4>
+        </div>
+        <div class="scroll">
+            <img  class="splsecimg"src="images/naan.jpg" />
+            <h4>Try our Butter Naan at just Rs.50 only!</h4>
+        </div>
+        <div class="scroll">
+            <img  class="splsecimg"src="images/Masala-Dosa.jpg" />
+            <h4>Masala Dosa-Let the crisp delight.</h4>
+        </div>
+    </div>
+    <div class="faded" id="Reviews">
+        <hr />
+        <h2 >Reviews</h2>
+        <hr />
+    </div>
+    <div class="point">
+        <div class="review"> 
+           <p><strong>Name:</strong>Prashant Kabi <img class="revimg" src="images/prashantkabi.jpg" width="150px" height="100px" /></p>
+           <p><strong>Review:</strong>I really liked the services of waiters and the food also tastes nice.
+           </p>
+        </div>
+        <div class="review"> 
+           <p><strong>Name:</strong>Omm Mishra  <img class="revimg" src="images/ommishra.jpg" width="150px" height="100px" /></p>
+           <p><strong>Review:</strong>I'm in love with the Prawn Butter Masala ,they offer. A must Visit place.</p>
+        </div>
+        <div class="review"> 
+          <p><strong>Name:</strong>Prakash Samal <img class="revimg" src="images/prakashsamal.jpg" width="150px" height="100px" /></p>
+          <p><strong>Review:</strong>I personally didn't enjoy due to poor infrastructures,though fooding was good.</p>
+        </div>
+    </div>
+    <br />
+    <hr />
+    <h3>We'll be glad to know your reviews and suggestions.</h3>
+    <form class="takerev">
+      <strong>Name:</strong>
+      <input type="text" placeholder="type here" />
+      <br /> <br /> <br />
+      <strong>Email Address:</strong>
+      <input type="email" placeholder="example@example.com" />
+      <br /> <br /> <br />
+      <strong>Review:</strong>
+      <input type="text" placeholder="Type here" />
+      <br /> <br /> <br />
+      <input type="submit" value="Click here to finish."/>
+    </form>
+    <hr />
+    <div class="footer">
+      <p><a href="https://www.palmettobaysunrisecafe.com/privacy"  target="_blank" style="color: seashell; text-decoration: none;">Privacy policy</a> </p>
+      <p><a href="https://www.sunrisecafebolton.com/terms"  target="_blank" style="color: seashell; text-decoration: none;">Terms and Conditions</a> </p>
+      <a href="https://twitter.com/"  target="_blank"><img src="images/twitter.png" width="20px" height="20px" /></a>
+      <a href="https://www.instagram.com/"  target="_blank" ><img src="images/instagram.jpg" width="20px" height="20px" /></a>
+      <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" width="20px" height="20px" /></a> 
+      <a  id="backtotop" href="#top" style="color: seashell; text-decoration: none";><br />Back To Top</a>
+      <br /> <br /> <br /> 
+    </div>
+
+</div>
+</body>
+</html>
